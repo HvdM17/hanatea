@@ -11,7 +11,7 @@
 
     <div class="mt-8 grid gap-5 md:grid-cols-2">
       <div class="rounded-2xl border border-emerald-100 bg-emerald-50 p-6">
-        <div class="text-sm font-extrabold text-emerald-900">Cerita Singkat</div>
+        <div class="text-sm font-extrabold text-emerald-900">Cerita Singkat!</div>
         <p class="mt-2 text-sm text-slate-700">
           {{ $setting->about ?? 'Berawal dari keinginan menghadirkan minuman segar yang bisa dinikmati setiap hari tanpa bikin kantong kaget.' }}
         </p>

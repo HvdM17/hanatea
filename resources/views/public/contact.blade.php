@@ -56,9 +56,8 @@
       </p>
 
       <div class="mt-6 rounded-2xl border border-emerald-100 bg-emerald-50 p-5">
-          <img class="w-full max-w-sm rounded-2xl bg-white p-3 shadow-sm"
-          src="{{ asset('assets/cat-qris.png') }}">
-          <div class="mt-3 text-sm text-slate-600">
+        <img src="{{ asset($setting->qris_image ?? 'assets/cat-qris.png') }}" alt="QRIS HanaTea" class="mt-3 w-48">
+        <div class="mt-3 text-sm text-slate-600">
             Scan QRIS untuk pembayaran. Simpan bukti transfer jika diperlukan.
           </div>
       </div>

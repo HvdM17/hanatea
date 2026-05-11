@@ -29,6 +29,7 @@ class DatabaseSeeder extends Seeder
             'tiktok' => 'https://tiktok.com/@hanatea.bkl',
             'whatsapp' => '6282374436884',
             'address' => 'https://maps.app.goo.gl/Ubg1umGTQuBcR1ob7?g_st=aw',
+            'qris_image' => 'assets/cat-qris.png',
             'open_hours' => '09.00 - 21.00',
             'about' => 'HanaTea adalah UMKM minuman yang baru berdiri dan siap jadi teman segar harianmu.',
         ]);
