@@ -7,7 +7,7 @@
   $waLink = $waNumber ? ('https://wa.me/'.$waNumber.'?text='.urlencode('Halo HanaTea, saya mau pesan.')) : null;
 @endphp
 
-<section class="mx-auto max-w-6xl px-4 py-12">
+<section class="mx-auto max-w-6xl px-4 py-10">
   <div class="grid gap-6 md:grid-cols-2">
     <div class="rounded-3xl border border-emerald-100 bg-white p-8 shadow-sm">
       <h1 class="text-3xl font-extrabold">Kontak & Lokasi</h1>
@@ -55,7 +55,7 @@
         Tenang, HanaTea sudah mendukung pembayaran digital via <span class="font-extrabold text-emerald-800">QRIS</span>.
       </p>
 
-      <div class="mt-6 rounded-2xl border border-emerald-100 bg-emerald-50 p-5">
+      <div class="mt-6 rounded-2xl border border-emerald-100 bg-emerald-50 p-5 justify-center items-center flex flex-col">
         <img src="{{ asset($setting->qris_image ?? 'assets/cat-qris.png') }}" alt="QRIS HanaTea" class="mt-3 w-48">
         <div class="mt-3 text-sm text-slate-600">
             Scan QRIS untuk pembayaran. Simpan bukti transfer jika diperlukan.

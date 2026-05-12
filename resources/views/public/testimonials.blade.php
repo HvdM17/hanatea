@@ -1,7 +1,7 @@
 @extends('layouts.public', ['title' => 'Testimoni - HanaTea'])
 
 @section('content')
-<section class="mx-auto max-w-6xl px-4 py-12">
+<section class="mx-auto max-w-6xl px-4 py-10">
   <div class="flex items-end justify-between gap-4">
     <div>
       <h1 class="text-3xl font-extrabold">Testimoni Pelanggan</h1>

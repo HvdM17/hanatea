@@ -80,9 +80,9 @@ class DatabaseSeeder extends Seeder
         ]);
 
         foreach ([
-            ['Nadia', 'Enak dan seger banget! Harga pelajar.', 5],
-            ['Rafi', 'Green tea-nya creamy, suka.', 5],
-            ['Salsa', 'Fast response, bisa QRIS juga.', 5],
+            ['Nadia', 'Enak dan seger banget! Harganya gacorrr.', 5],
+            ['Rafi', 'Cendol Pandan-nya creamy, suka.', 5],
+            ['Salsa', 'Fast response, bisa QRIS juga. Sugoiii.', 5],
         ] as [$n,$m,$r]) {
             Testimonial::create(['customer_name'=>$n,'message'=>$m,'rating'=>$r]);
         }

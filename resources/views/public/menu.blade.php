@@ -1,7 +1,7 @@
 @extends('layouts.public', ['title' => 'Menu HanaTea'])
 
 @section('content')
-<section class="mx-auto max-w-6xl px-4 py-10">
+<section class="mx-auto max-w-6xl px-4 py-8">
   <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
     <div>
       <h1 class="text-2xl font-extrabold">Menu HanaTea</h1>
