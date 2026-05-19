@@ -11,9 +11,16 @@
 
   <div>
     <label class="text-sm font-bold">Kategori</label>
-    <input name="category" value="{{ old('category', $product->category ?? '') }}"
-           class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-200"
-           placeholder="Contoh: Tea / Yakult / Cendol">
+    @php 
+      $selectedCategory = old('category', $product->category ?? ''); 
+    @endphp
+    <select name="category" 
+            class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-200 bg-white">
+      <option value="" disabled @selected($selectedCategory == '')>-- Pilih Kategori --</option>
+      <option value="Tea" @selected($selectedCategory == 'Tea')>Tea</option>
+      <option value="Yakult" @selected($selectedCategory == 'Yakult')>Yakult</option>
+      <option value="Cendol" @selected($selectedCategory == 'Cendol')>Cendol</option>
+    </select>
   </div>
 
   <div>

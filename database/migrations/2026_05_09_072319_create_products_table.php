@@ -13,7 +13,7 @@ return new class extends Migration {
             $table->string('slug')->unique();
             $table->string('category'); 
             $table->text('description')->nullable();
-            $table->unsignedInteger('price'); // rupiah
+            $table->decimal('price', 12, 2);
             $table->string('image')->nullable(); // path storage
             $table->boolean('status')->default(true); // tersedia / tidak
             $table->unsignedInteger('sold_count')->default(0); // produk terlaris (opsional tapi berguna)
