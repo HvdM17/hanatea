@@ -26,11 +26,9 @@ Route::middleware(['auth', 'verified', 'admin'])
     ->name('admin.')
     ->group(function () {
         Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('dashboard');
-
         Route::resource('/products', ProductController::class);
         Route::resource('/banners', BannerController::class)->except(['show']);
         Route::resource('/testimonials', TestimonialController::class)->except(['show','edit','update']);
-
         Route::get('/settings', [SettingController::class, 'edit'])->name('settings.edit');
         Route::put('/settings', [SettingController::class, 'update'])->name('settings.update');
     });
