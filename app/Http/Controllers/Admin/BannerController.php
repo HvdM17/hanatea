@@ -20,22 +20,24 @@ class BannerController extends Controller
     }
 
     public function store(Request $request)
-    {
-        $data = $request->validate([
-            'title' => ['required', 'string', 'max:160'],
-            'description' => ['nullable', 'string'],
-            'is_active' => ['required', 'boolean'],
-            'image' => ['required', 'image', 'max:2048'],
-        ]);
+{
+    $data = $request->validate([
+        'title' => ['required', 'string', 'max:160'],
+        'description' => ['nullable', 'string'],
+        'is_active' => ['required', 'boolean'],
+        'image' => ['nullable', 'image', 'max:2048'],
+    ]);
 
+    if ($request->hasFile('image')) {
         $data['image'] = $request->file('image')->store('banners', 'public');
-
-        Banner::create($data);
-
-        return redirect()
-            ->route('admin.banners.index')
-            ->with('success', 'Banner promo berhasil ditambahkan.');
     }
+
+    Banner::create($data);
+
+    return redirect()
+        ->route('admin.banners.index')
+        ->with('success', 'Banner promo berhasil ditambahkan.');
+}
 
     public function edit(Banner $banner)
     {

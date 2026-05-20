@@ -35,9 +35,6 @@
         <div class="text-xs text-slate-500">Gambar saat ini</div>
       </div>
     @endif
-    @if(!isset($banner))
-      <div class="mt-1 text-xs text-slate-500">Wajib diisi saat membuat banner baru.</div>
-    @endif
   </div>
 </div>
 
